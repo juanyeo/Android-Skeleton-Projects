@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Widget UI Preferences">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@android:drawable/ic_lock_silent_mode_off"
+            android:key="check1"
+            android:summary="체크시 Edit Text 활성화"
+            android:title="Check box preference" />
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:dependency="check1"
+            android:dialogIcon="@android:drawable/ic_menu_always_landscape_portrait"
+            android:icon="@android:drawable/stat_notify_voicemail"
+            android:key="edit1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="다이얼로그 창에 입력"
+            android:title="Edit text preference" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:key="switch1"
+            android:summaryOff="스위치 OFF"
+            android:summaryOn="스위치 ON"
+            android:title="Switch preference" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="List UI Preferences">
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogIcon="@android:drawable/ic_lock_idle_alarm"
+            android:entries="@array/list_keys"
+            android:entryValues="@array/list_values"
+            android:icon="@android:drawable/ic_menu_call"
+            android:key="list1"
+            android:summary="배열 2개 필요 - Key, Value"
+            android:title="List preference" />
+        <MultiSelectListPreference
+            android:defaultValue="@array/default_values"
+            android:dialogIcon="@android:drawable/btn_star_big_on"
+            android:entries="@array/list_keys"
+            android:entryValues="@array/list_values"
+            android:icon="@android:drawable/ic_lock_idle_low_battery"
+            android:key="multi1"
+            android:summary="다중 선택 가능 "
+            android:title="Multi select list preference" />
+    </PreferenceCategory>
+</PreferenceScreen>

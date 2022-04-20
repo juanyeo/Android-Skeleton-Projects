@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Preferences</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_button">Save Data</string>
+    <string name="read_button">Read Data</string>
+    <string name="change_fragment_button">Change Fragment</string>
+    <string-array name="list_keys">
+        <item>Orange</item>
+        <item>Kiwi</item>
+        <item>Banana</item>
+    </string-array>
+    <string-array name="list_values">
+        <item>오렌지</item>
+        <item>키위</item>
+        <item>바나나</item>
+    </string-array>
+    <string-array name="default_values">
+        <item>키위</item>
+        <item>바나나</item>
+    </string-array>
+</resources>
